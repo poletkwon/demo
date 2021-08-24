@@ -105,10 +105,8 @@
         <div class="carousel-item">
 
             <div class="one" style="background-color: #CC9999; height:300px">
-                <p class="text-center" style="height:auto">
-
+                <p class="text-center" style="height:auto" th:text="${person.name} + 'okok'">
                     폴스타헬스케어 신입입니다.
-
                 </p>
 
             </div>
@@ -117,8 +115,9 @@
         <div class="carousel-item">
 
             <div class="two" style="background-color: #CC99CC; height:300px">
-                <p class="text-center" style="height:auto">
-                    8월 2일 첫 출근입니다.
+
+                <p class="text-center" style="height:auto" th:each="iAmVariable:${list}" th:text="${iAmVariable}">
+                    8월 2일 첫 출근입니다.2
                 </p>
             </div>
         </div>
