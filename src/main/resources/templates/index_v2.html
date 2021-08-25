@@ -1,64 +1,42 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-
 <head>
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <title>자기소개서</title>
-    <style>
-    .header {
-    grid-area : header;
-    text-align : center;
-    }
-
-    .container{
-    display: grid;
-    grid-template-areas:
-    'header header header'
-    'one two three'
-    'footer footer footer';
-}
-
-    .one, .two, .three,
-    {
-    padding : 20px;
-    margin:auto;
-
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-
-
-    outline:black;
-    }
-
-
-
-
-
-
-
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/cssTest.css">
+    <title>자기소개서같은 일기장</title>
 </head>
 <body style="padding:50px">
-
-<h1 class="header">자기소개서</h1>
-<p class="header">권태우입니다.</p>
-
-<!--
-<div style="text-align:center">
-    <button type="button" class="btn btn-secondary">프로필 사진</button>
+<div class="header">
+    <h1>자기소개서같은 일기장</h1>
+    <p><b>권태우입니다.</b></p>
+    <p>왜 일까요.. 가운데로 이동이 되지 않습니다. .header를 했습니다.</p>
 </div>
 
--->
+<div style="text-align:center">
+    <p>이건 보노보노 입니다.</p>
+    <img src="/image/bnbn.jfif">
+</div>
+
+
+<div style="text-align:center">
+    <button type="button" class="btn btn-secondary">보노보노 나오는 버튼</button>
+</div>
+
+<nav>
+    <ul>
+        <li>버튼1</li>
+        <li>버튼2</li>
+        <li>버튼3</li>
+        <li>버튼4</li>
+    </ul>
+
+</nav>
+
 <div class="container" style="margin-top :30px; margin-bottom: 30px">
 
     <div class="one" style="background-color:lavender">
@@ -90,7 +68,7 @@
             매번 저는 불고기밥만 먹었습니다. 다른 메뉴는 별로 먹고싶지 않았나 봅니다.
         </p>
     </div>
-    <div class="three" style="background-color:lavender; height:200px">
+    <div class="three" style="background-color:lavender">
         <p class="text-center">
             퇴근시간은 점심시간에 이은 직장인이 가장 기다리는 시간입니다.
             대부분의 직장은 6시에 끝이 나는것 같습니다.
@@ -102,10 +80,6 @@
             집이 꽤나 먼 거리에 있지만 빨간 버스를 타면 앉아서 편안하게 집에 갑니다.
             이번주는 비가 와서 그런지 사람들이 우산을 쓰고 있어서 길거리가 더욱 번잡해 보입니다.
             이제 6시 입니다. 저도 퇴근을 준비하고 집에 가겠습니다.
-
-
-
-
         </p>
     </div>
 
@@ -174,19 +148,12 @@
 
 </div>
 
-
 </body>
+<footer>
+    <div>이것은 Footer 입니다.</div>
 
-
+</footer>
 <script>
-    $('.btn').button();
-
-
-
-
-
-
-
 </script>
 
 </html>

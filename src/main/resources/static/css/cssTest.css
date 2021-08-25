@@ -1,0 +1,29 @@
+<style>
+
+   .header {
+    grid-area : header;
+    text-align : center;
+    }
+
+    .container{
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'one two three'
+    'footer footer footer';
+}
+
+    .one, .two, .three,
+    {
+    padding : 20px;
+    margin:auto;
+
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+
+
+    outline:black;
+    }
+</style>
