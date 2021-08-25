@@ -10,6 +10,7 @@
     grid-template-areas:
     'header header header'
     'one two three'
+    'four five six'
     'footer footer footer';
 }
 
