@@ -1,13 +1,12 @@
 package com.polestar.study.demo.mapper;
 
-/*
-@Mapper0
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
 public interface TestMapper {
 
-    @Select ("SELECT * FROM TEST")
+
     String getCurrentTime();
 
 
 }
-
-*/

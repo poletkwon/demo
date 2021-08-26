@@ -1,6 +1,8 @@
 package com.polestar.study.demo.controller.api;
 
 import com.polestar.study.demo.model.Person;
+import com.polestar.study.demo.model.PersonService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,10 +12,15 @@ import java.util.ArrayList;
 @RequestMapping("/apiController")
 public class apiController {
 
+    @Autowired
+    private PersonService personService;
+
     @GetMapping("/test")
     public Person getTest(Model model) {
 
         Person person = new Person();
+
+        person = personService.selectPerson();
 
         person.setName("나는태우다");
         person.setMessage("나는 권태우다 아하");
