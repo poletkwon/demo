@@ -2,24 +2,30 @@ package com.polestar.study.demo.model;
 
 public class Person {
 
-    private String Name;
-    private String Message;
+    private String name;
+    private String message;
 
-
-    // Getter and Setter
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getMessage() {
-        return Message;
+        return message;
     }
 
     public void setMessage(String message) {
-        Message = message;
+        this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", message='" + message + '\'' +
+                '}';
     }
 }

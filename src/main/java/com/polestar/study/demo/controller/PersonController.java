@@ -45,24 +45,17 @@ public class PersonController {
 
         Person person = new Person();
 
-        person.setName("나는태우다");
-        person.setMessage("나는 권태우다 아하");
+        person.setName("나는태우다 Sample Message 출력");
         person.setMessage("나는 권태우다아아아 하하하");
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("야호");
-        list.add("22222222");
-        list.add("33333333");
-        list.add("44444444");
-        list.add("55555555");
-        list.add("66666666");
-
-
-        model.addAttribute("person", person);
-        model.addAttribute("list", list);
-
-
+        System.out.println(person);
         return person;
+    }
+
+    @GetMapping("/handlebarTest")
+    public String handlebarTest(){
+
+        return "index_handlebar2";
     }
 
 }
